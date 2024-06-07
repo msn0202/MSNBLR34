@@ -32,6 +32,12 @@ padding: 10px;
 padding: 8px;
 color: yellow;
 }
+.btn-class{
+  background-color: green;
+}
+.contact-bar{
+  display: flex;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

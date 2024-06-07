@@ -1,5 +1,7 @@
 import React from 'react';
+import "./App.css";
 import Nav from './Nav';
+import {Link} from "react-router-dom";
 function Contact(props) {
     return (
         <>
@@ -11,13 +13,13 @@ function Contact(props) {
         <Nav />
       </div>
     </div>
-            <div>
-        <h2 style={{color:"red",textDecoration:"underline"}}>Head Office</h2>
-        <address>
+            <div className="contact-bar">
+        <h2 style={{color:"red",textDecoration:"underline"}}>Head Office</h2><br/><br/>
+    
             <p>800 2nd street</p>
             <p>Richmond Road</p>
             <p>Bangalore 560025</p>
-        </address><br/>
+    
         <h2 style={{color:"red",textDecoration:"underline"}}>Branch</h2>
         <address>
             <p>2nd cross</p>
@@ -37,6 +39,7 @@ function Contact(props) {
             <p>Kolkatha 200768</p>
         </address><br/>
         </div>
+        <button className="btn-class"><Link to="/">Back</Link></button>
         </>
     
     );
